@@ -22,5 +22,3 @@ if (hasilconfirm === true) {
 } else {
     alert ('kasihan :(');
 }
-
- console.log (INFO);
