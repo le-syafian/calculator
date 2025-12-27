@@ -86,7 +86,27 @@ for (var jumlahBintang = 10; jumlahBintang >= 0; jumlahBintang--) {
 }
 console.log(s + B);
 
-
+var pagar = '';
+var wow = 10;
+for (var z = 0; z < wow; z++) {
+    
+    if (z % 2 == 0) {
+        for (var i = 0; i < 10; i++) {
+        for (var j = 0; j < 1; j++) {
+            pagar += ' ';
+        }
+        pagar += '#';
+        }
+    }else {
+        for (var i = 0; i < 10; i++) {
+            for (var j = 0; j < 1; j++) {
+                pagar += '#';
+            }
+            pagar += ' ';
+        }
+    }pagar += '\n';
+}
+console.log(pagar);
 
 
 
