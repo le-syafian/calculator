@@ -31,20 +31,63 @@
 // }
 
 var s = '';
-for (var i = 0; i < 10; i++) {
-    for (var j = 0; j <= i; j++) {
+var B = '';
+for (var jumlahBintang = 0; jumlahBintang < 10; jumlahBintang++) {
+
+    for (var spasi = 9; spasi >= jumlahBintang; spasi--) {
+        s += ' ';
+    }
+    for (var j = 0; j <= jumlahBintang; j++) {
         s += '*';
+    }
+    for (var k = 0; k < jumlahBintang; k++) {
+        s += '*';
+    }
+    for (var l= 10; l >= jumlahBintang; l--) {
+        s += ' ';
+    }
+    for (var m = 10; m >= jumlahBintang; m--) {
+        s += ' ';
+    }
+    for (var n = 0; n <= jumlahBintang; n++) {
+        s += 'a';
+    }
+    for (var o = 1; o <= jumlahBintang; o++) {
+        s += 'a';
     }
     s += '\n';
 }
-console.log(s);
 
-var s = '';
-for (var i = 10; i > 0; i--) {
-    for (var j = 0; j < i; j++) {
-        s += '*';
+
+for (var jumlahBintang = 10; jumlahBintang >= 0; jumlahBintang--) {
+    for (var spasi = 9; spasi >= jumlahBintang; spasi--) {
+        B += ' ';
     }
-    s += '\n';
+    for (var bintang = jumlahBintang; bintang >= 0; bintang--) {  
+        B += '*';
+    }
+    for (var l = jumlahBintang; l > 0; l--) {  
+        B += '*';
+    }
+    for (var spasi2 = 11; spasi2 > jumlahBintang; spasi2--) {
+        B += ' ';
+    }
+    for (var i = 11; i > jumlahBintang; i--) {
+        B += ' ';
+    }
+    for (var a = jumlahBintang; a >= 0; a--) {
+        B += 'a';
+    }
+    for (var a2 = jumlahBintang; a2 > 0; a2--) {
+        B += 'a';
+    }
+    
+    B += '\n';
 }
-console.log(s);
+console.log(s + B);
 
+
+
+
+
+//pakai logika pertambahan + nanti, untuk menggabungkan bintang nya
