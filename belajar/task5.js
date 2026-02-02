@@ -108,6 +108,28 @@ for (var z = 0; z < wow; z++) {
 }
 console.log(pagar);
 
+//pascal triangle belum jadi
+var i, j;
 
 
+
+
+
+
+var s = '';
+
+for( i = 1 ; i <= 10 ; i++){
+   for( j = 1; j <= 10 ; j++){
+        
+     if(j + 1 <= i ){
+          s += '0';
+     }
+     else{
+          s += '*';
+     }
+   }
+    s += '\n';
+}
+
+console.log(s);
 //pakai logika pertambahan + nanti, untuk menggabungkan bintang nya

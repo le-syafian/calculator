@@ -1,0 +1,9 @@
+{
+  "name": "fuzzy-disco-bot",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "dependencies": {
+    "ws": "^8.18.3"
+  }
+}

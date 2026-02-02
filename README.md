@@ -257,3 +257,8 @@ Bot tidak menghitung indikator.
 
 Private internal project.
 Use strictly for research and personal trading systems.
+
+step 1
+npm install binance-api-node //bash
+npm install technicalindicators
+npm install better-sqlite3
