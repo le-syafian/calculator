@@ -1,21 +1,18 @@
-// Ini adalah definisi fungsi 'angka'
-    function angka() {
-        // Outputnya adalah memasukkan nilai ke dalam elemen ID 'layar'
-        // document.getElementById('layar').value += babi;
-        
-        // // Output tambahan di console untuk mengecek
-        // console.log("Tombol yang diklik: " + babi);
-        console.log("Fungsi angka() dipanggil");
-    }
+const container = document.getElementById('number-container');
 
-    // Ini adalah definisi fungsi 'angka'
-    function farel() {
-        // Outputnya adalah memasukkan nilai ke dalam elemen ID 'layar'
-        // document.getElementById('layar').value += babi;
-        
-        // // Output tambahan di console untuk mengecek
-        // console.log("Tombol yang diklik: " + babi);
-        console.log("Fungsi angka() farel dipanggil");
-    }
+//mengambil element
+const numbers = getElementById('number-container');
+
+// function createButton(value) {
+//     const button = document.createElement('button');
+//     button.textContent = value;
+//     button.addEventListener('click', () => {
+//         const layar = document.getElementById('layar');
+//         layar.value += value;
+//     });
+//     return
+// }
+
+console.log(numbers);
 
     

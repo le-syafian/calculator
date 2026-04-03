@@ -14,27 +14,51 @@
     <div>calculator</div>
     <input type="text" id="layar">
 
-    <div class="buttons">
-       <button type="button" onclick="angka()">1</button>
-       <button type="button" onclick="farel()">2</button>
-       <!-- <button type="button" onclick="angka('3')">3</button>
-       <button type="button" onclick="angka('4')">4</button>
-       <button type="button" onclick="angka('5')">5</button>
-       <button type="button" onclick="angka('6')">6</button>
-       <button type="button" onclick="angka('7')">7</button>
-       <button type="button" onclick="angka('8')">8</button>
-       <button type="button" onclick="angka('9')">9</button>
-       <button type="button" onclick="angka('0')">0</button> -->
+    <div class="buttons" id="number-container">
+        <button type="button" class="angka" data-value="1">1</button>
+        <button type="button" class="angka" data-value="2">2</button>
+        <button type="button" class="angka" data-value="3">3</button>
+        <button type="button" class="angka" data-value="4">4</button>
+        <button type="button" class="angka" data-value="5">5</button>
+        <button type="button" class="angka" data-value="6">6</button>
+        <button type="button" class="angka" data-value="7">7</button>
+        <button type="button" class="angka" data-value="8">8</button>
+        <button type="button" class="angka" data-value="9">9</button>
+        <button type="button" class="angka" data-value="0">0</button>
+       
     </div>
-    <div>
-         <button type="button" onclick="console.log('+')">+</button>
-         <button type="button" onclick="console.log('-')">-</button>
-         <button type="button" onclick="console.log('*')">*</button>
-         <button type="button" onclick="console.log('/')">/</button>
-         <button type="button" onclick="console.log('=')">=</button>
+    <div class="buttons" id="op-container">
+         <button type="button" class="op" data-value="+">+</button>
+         <button type="button" class="op" data-value="-">-</button>
+         <button type="button" class="op" data-value="*">*</button>
+         <button type="button" class="op" data-value="/">/</button>
+         <button type="button" class="op" data-value="=">=</button>
     </div>
     
     <style> h1 { color: white; } </style> 
-    <script src="belajar/task8.js"></script>
+    <script>
+        const numbers = document.getElementById('number-container');
+        const operators = document.getElementById('op-container');
+
+        numbers.addEventListener('click', (event) => {
+            if (event.target.classList.contains('angka')) {
+                const value = event.target.getAttribute('data-value');
+                const layar = document.getElementById('layar');
+                layar.value += value;
+                console.log(value);
+            }
+        })
+
+        numbers.addEventListener('click', (event) => {
+            if (event.target.classList.contains('op')) {
+                const value = event.target.getAttribute('data-value');
+                const layar = document.getElementById('layar');
+                layar.value += value;
+                console.log(value);
+            }
+        })
+
+
+    </script>
 </body>
 </html>
